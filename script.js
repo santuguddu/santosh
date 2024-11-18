@@ -182,13 +182,14 @@ forecasts.slice(0, 5).forEach((forecast, index) => {
 
 // Inject the updated layout
 forecastCards.innerHTML = `
-    <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-6 mb-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         ${upperRow}
     </div>
-    <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         ${lowerRow}
     </div>
 `;
+
 
 // Show the forecast section
 forecastOutput.classList.remove('hidden');
